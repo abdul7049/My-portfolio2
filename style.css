@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none; border:none;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+body{
+   
+    line-height: 1.7;
+    color: white;
+    background:#020611;
+}
+
+#menu-bar{
+    font-size: 3rem;
+    color:#030303;
+    cursor: pointer;
+    display: none;
+  }
+  
+  header{
+    position: fixed;
+    top:0; left: 0; right:0;
+    background:#063647;
+    z-index: 1000;
+    padding:1rem 5%;
+    border-bottom: 3px solid #039D82;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header .logo{
+    font-weight: bolder;
+    font-size: 2rem;
+  }
+  
+  header .navbar a{
+    font-size: 1.3rem;
+    margin-left: 2.5rem;
+    color: white;
+    transition: 400ms;
+  }
+  
+  header .navbar a:hover{
+    color:#64d1e6;
+    font-weight: bolder;
+  }
+
+
+
+header .neonText {
+    color: #039D82;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+  }
+
+
+#headerr{
+    position: relative;
+    top: 5rem;
+    overflow: hidden;
+    height: 65vh;
+    margin-bottom: 10rem;
+}
+section img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+.header__right img{
+    width: 190px;
+    height: 190px;
+    display: block;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #64d1e6;
+}
+
+.header__container .header__right .header__right-image{
+  margin: 0;
+  position: absolute;
+  left: 5%;
+  top: 27%;
+}
+
+.about .about_container{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 1rem;
+}
+.about .about_container .about_right img{
+    border: 4px solid #64d1e6;
+    border-radius: 10%;
+}
+.about .about_left .btn{
+    background: #64d1e6;
+    padding: 1rem;
+    border-radius: 5rem;
+}
+.about .about_left a{
+   margin-left: 6rem;
+   font-size: 1rem;
+   font-weight: bold;
+   color: white;
+   transition: 100ms;
+}
+.about .about_left a:hover{
+    background: transparent;
+    border: 3px solid #063647; ;
+    color:#64d1e6; ;
+}
+
+.about .about_left h1{
+
+        font-family: 'Eczar', serif; font-size: 2.5rem;
+   
+}
+.about .about_left .he{
+    font-size: 2rem; padding-left: 1rem;
+}
+.about .about_left p{
+    font-size: 1.5rem; padding-left: 2rem;
+}
+
+.team h2{
+    font-family: 'Eczar', serif; 
+    font-size: 2.5rem;
+   text-align: center;
+}
+
+.team__container{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.team__member{
+    background: #006872;
+    padding: 2rem;
+    border: 6px solid transparent;
+    transition: 300ms;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10%;
+}
+.team__member:hover{
+    background: transparent;
+    border-color: #64d1e6;
+}
+.team__member-image img{
+    filter: saturate(0);
+}
+.team__member-image img:hover{
+    filter: saturate(1);
+}
+.team__member-info *{
+    text-align: center;
+    margin-top: 1.4rem;
+}
+.team__member-info h4{
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+}
+.team__member-socials{
+    position: absolute;
+    top: 50%;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: #64d1e6;
+    border-radius: 1rem 0 0 1rem;
+    transform: translateY(-50%);
+    box-shadow: -2rem 0 2rem black;
+    transition: 400ms;
+}
+.team__member:hover .team__member-socials{
+    right: 0;
+}
+.team__member-socials a{
+    padding: 1rem;
+    color: white;
+}
+.team__member-socials i{color: white;}
+
+.contact .team__container{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr ;
+    width: 30%;
+    gap: 2rem;
+}
+
+
+/*Media Query tabs*/
+
+
+
+@media screen and (max-width:1024px) {
+
+    #menu-bar{
+      display: block;
+      color: #039D82
+    }
+    #headerr{
+        
+        height: 60vh;
+    }
+  .container{
+    width: 90%;
+  }
+  
+    header .navbar{
+      position: absolute;
+      top:100%; left: 0; right:0;
+      background:#063647;
+      border-top: 3px solid red;
+      padding:1rem 2rem;
+      clip-path:polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+  
+    header .navbar.nav-toggle{
+      clip-path:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  
+    header .navbar a{
+      display: block;
+      margin:1.5rem 0;
+      padding:1rem;
+      background:#006872;
+      text-align: center;
+      border-radius: .5rem;
+    }
+  
+    header .navbar a:hover{
+      background:#039D82;
+      color: #64d1e6
+    }
+  
+    .fa-times{
+      transform: rotate(180deg);
+    }
+    .header__right img{
+        width: 160px;
+        height: 160px;
+        
+    }
+
+    .header__container .header__right .header__right-image{
+        margin: 0;
+        position: absolute;
+        left: 38%;
+        top: 44%;
+      }
+    
+
+      .about .about_left h1{
+
+        font-family: 'Eczar', serif; font-size: 2rem;
+   
+}
+.about .about_left .he{
+    font-size: 1.5rem; padding-left: 1rem;
+}
+.about .about_left p{
+    font-size: 1rem; padding-left: 2rem;
+}
+    
+  }
+
+
+  /*media for phones*/
+  @media screen and (max-width:600px) {
+  
+    .header__right img{
+        width: 120px;
+        height: 120px;
+        
+    }
+    .about .about_container{
+        display: grid;
+        grid-template-columns:100%;
+       
+    }
+
+    .header__container .header__right .header__right-image{
+        margin: 0;
+        position: absolute;
+        left: 38%;
+        top: 23%;
+      }
+    .about_right img{
+        width: 50%;  
+       
+        align-items: center;      
+    
+    }
+    .about .about_right{
+        margin-top: 1rem;
+        
+        
+    }
+    .team__container{
+
+        grid-template-columns: 100%;
+        gap: 1rem;
+    }
+    .about .about_right img{
+        display: none;
+    }
+  }
