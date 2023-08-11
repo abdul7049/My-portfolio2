@@ -204,13 +204,7 @@ section img{
 }
 .team__member-socials i{color: white;}
 
-.contact .team__container{
-    margin-top: 1rem;
-    display: grid;
-    grid-template-columns: 1fr ;
-    width: 30%;
-    gap: 2rem;
-}
+
 
 
 /*Media Query tabs*/
@@ -236,7 +230,7 @@ section img{
       top:100%; left: 0; right:0;
       background:#063647;
       border-top: 3px solid red;
-      padding:1rem 2rem;
+      padding:1rem 1rem;
       clip-path:polygon(0 0, 100% 0, 100% 0, 0 0);
     }
   
@@ -246,8 +240,8 @@ section img{
   
     header .navbar a{
       display: block;
-      margin:1.5rem 0;
-      padding:1rem;
+      margin:10px 0;
+      padding:5px;
       background:#006872;
       text-align: center;
       border-radius: .5rem;
@@ -270,8 +264,8 @@ section img{
     .header__container .header__right .header__right-image{
         margin: 0;
         position: absolute;
-        left: 38%;
-        top: 44%;
+        left: 40%;
+        top: 55%;
       }
     
 
@@ -294,10 +288,20 @@ section img{
   @media screen and (max-width:600px) {
   
     .header__right img{
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
         
     }
+    #menu-bar{
+      font-size: 1rem;
+    
+      
+    }
+    header .logo{
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
+    
     .about .about_container{
         display: grid;
         grid-template-columns:100%;
@@ -307,20 +311,11 @@ section img{
     .header__container .header__right .header__right-image{
         margin: 0;
         position: absolute;
-        left: 38%;
-        top: 23%;
+        left: 35%;
+        top: 45%;
+        margin-bottom: 0;
       }
-    .about_right img{
-        width: 50%;  
-       
-        align-items: center;      
-    
-    }
-    .about .about_right{
-        margin-top: 1rem;
-        
-        
-    }
+   
     .team__container{
 
         grid-template-columns: 100%;
@@ -329,4 +324,15 @@ section img{
     .about .about_right img{
         display: none;
     }
+    #headerr{
+      height: 21vh;
+    }
+   #myh{
+    font-size: .2rem;
+   }
+   .about .about_left .btn{
+    background: #64d1e6;
+    padding: .7rem;
+    border-radius: 4rem;
+}
   }
